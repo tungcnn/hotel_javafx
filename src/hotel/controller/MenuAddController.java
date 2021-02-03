@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package hotel;
+package hotel.controller;
 
-import static hotel.HotelManager.rooms;
+import static hotel.controller.HotelManager.rooms;
 import hotel.entities.Customer;
 import hotel.entities.Room;
 import java.io.BufferedWriter;
@@ -54,7 +49,7 @@ public class MenuAddController implements Initializable {
 
     @FXML
     private void backMenu(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/Menu.fxml"));
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) label.getScene().getWindow();
         stage.setScene(scene);
@@ -71,6 +66,7 @@ public class MenuAddController implements Initializable {
         room.setStartDate(datePicker.getValue());
         room.customers.add(c);
         c.setRoomType(room.getRoomType());
+        c.setStartDate(datePicker.getValue());
         
         saveToFile(room, c);
         

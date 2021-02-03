@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package hotel;
+package hotel.controller;
 
 import hotel.entities.Customer;
 import hotel.entities.Room;
@@ -17,10 +12,6 @@ import javafx.scene.*;
 import javafx.stage.*;
 import javafx.fxml.*;
 
-/**
- *
- * @author SonTung
- */
 public class HotelManager extends Application {
 
     static ArrayList<Room> rooms = new ArrayList<>();
@@ -50,14 +41,16 @@ public class HotelManager extends Application {
             room.customers.add(c);
             c.setRoomType(room.getRoomType());
             room.setStartDate(startDate);
+            c.setStartDate(startDate);
         }
         myReader.close();
-        Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/Menu.fxml"));
 
         Scene scene = new Scene(root, 600, 400);
 
         stage.setTitle("Hotel Management");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 

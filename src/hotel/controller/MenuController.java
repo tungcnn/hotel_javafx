@@ -1,4 +1,4 @@
-package hotel;
+package hotel.controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,7 +23,7 @@ public class MenuController implements Initializable {
 
     @FXML
     private void toMenuAdd(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("MenuAdd.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/MenuAdd.fxml"));
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) label.getScene().getWindow();
         stage.setScene(scene);
@@ -31,7 +31,7 @@ public class MenuController implements Initializable {
 
     @FXML
     private void toMenuDisplay(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("MenuDisplay.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/MenuDisplay.fxml"));
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) label.getScene().getWindow();
         stage.setScene(scene);
@@ -44,7 +44,7 @@ public class MenuController implements Initializable {
     }
     @FXML
     private void toMenuDelete(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("MenuDelete.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/MenuDelete.fxml"));
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) label.getScene().getWindow();
         stage.setScene(scene);

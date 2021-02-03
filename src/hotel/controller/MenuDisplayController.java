@@ -1,10 +1,11 @@
-package hotel;
+package hotel.controller;
 
-import static hotel.HotelManager.rooms;
+import static hotel.controller.HotelManager.rooms;
 import hotel.entities.Customer;
 import hotel.entities.Room;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -42,6 +43,8 @@ public class MenuDisplayController implements Initializable {
     private TextField searchField;
 
     ObservableList<Customer> list = FXCollections.observableArrayList();
+    @FXML
+    private TableColumn<Customer, LocalDate> checkin;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -55,12 +58,13 @@ public class MenuDisplayController implements Initializable {
         room.setCellValueFactory(new PropertyValueFactory<>("roomType"));
         date.setCellValueFactory(new PropertyValueFactory<>("dateOfBirth"));
         id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        checkin.setCellValueFactory(new PropertyValueFactory<>("startDate"));
         table.setItems(list);
     }
 
     @FXML
     private void backMenu(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/Menu.fxml"));
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) table.getScene().getWindow();
         stage.setScene(scene);
@@ -79,7 +83,7 @@ public class MenuDisplayController implements Initializable {
                 a.show();
             } else {
                 Stage stage = (Stage) table.getScene().getWindow();
-                Parent root = FXMLLoader.load(getClass().getResource("Detail.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/Detail.fxml"));
                 stage.setUserData(c);
                 Scene scene = new Scene(root);
                 stage.setScene(scene);

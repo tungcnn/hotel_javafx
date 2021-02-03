@@ -1,10 +1,13 @@
 package hotel.entities;
 
+import java.time.LocalDate;
+
 public class Customer {
     private String name;
     private String dateOfBirth;
     private int id;
     private String roomType;
+    private LocalDate startDate;
 
     public Customer(String name, String dateOfBirth, int id) {
         this.name = name;
@@ -45,6 +48,14 @@ public class Customer {
 
     public void setRoomType(String roomType) {
         this.roomType = roomType;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
     }
     
     @Override

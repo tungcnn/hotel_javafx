@@ -7,14 +7,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.MenuDisplayController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.MenuDisplayController">
    <children>
       <TableView fx:id="table" layoutY="33.0" prefHeight="318.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columns>
-            <TableColumn fx:id="id" prefWidth="73.5999755859375" text="ID" />
-            <TableColumn fx:id="room" prefWidth="166.4000244140625" text="Room" />
-            <TableColumn fx:id="name" prefWidth="167.20001220703125" text="Name" />
-            <TableColumn fx:id="date" prefWidth="203.20001220703125" text="Date of Birth" />
+            <TableColumn fx:id="id" prefWidth="60.800048828125" text="ID" />
+            <TableColumn fx:id="room" prefWidth="112.0" text="Room" />
+            <TableColumn fx:id="name" prefWidth="140.0" text="Name" />
+            <TableColumn fx:id="date" prefWidth="168.7999267578125" text="Date of Birth" />
+            <TableColumn fx:id="checkin" prefWidth="116.79998779296875" text="Check in date" />
          </columns>
       </TableView>
       <Button layoutX="22.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#backMenu" prefHeight="26.0" prefWidth="86.0" text="Back" />

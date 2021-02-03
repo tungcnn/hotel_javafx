@@ -1,6 +1,6 @@
-package hotel;
+package hotel.controller;
 
-import static hotel.HotelManager.rooms;
+import static hotel.controller.HotelManager.rooms;
 import hotel.entities.Customer;
 import hotel.entities.Room;
 import java.io.FileWriter;
@@ -36,7 +36,7 @@ public class MenuDeleteController implements Initializable {
 
     @FXML
     private void backMenu(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/hotel/view/Menu.fxml"));
         Scene scene = new Scene(root, 600, 400);
         Stage stage = (Stage) room.getScene().getWindow();
         stage.setScene(scene);
