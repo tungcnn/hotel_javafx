@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -9,11 +10,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.DetailController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1061e3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.DetailController">
    <children>
-      <Label layoutX="160.0" layoutY="22.0" text="Edit Personal Information">
+      <Label alignment="CENTER" layoutX="104.0" layoutY="33.0" text="Edit Personal Information" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
-            <Font name="Arial Bold" size="23.0" />
+            <Font name="Agency FB Bold" size="36.0" />
          </font>
       </Label>
       <GridPane layoutX="100.0" layoutY="71.0" prefHeight="255.0" prefWidth="411.0">
@@ -27,19 +28,37 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="New Name" />
-            <Label text="New ID" GridPane.rowIndex="1" />
-            <Label text="New Date of Birth" GridPane.rowIndex="2" />
-            <TextField fx:id="name" prefHeight="14.0" prefWidth="288.0" GridPane.columnIndex="1" />
-            <TextField fx:id="id" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="date" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="142.0" text="New Name" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="146.0" text="New ID" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="174.0" text="New Date of Birth" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="name" prefHeight="14.0" prefWidth="288.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="id" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></TextField>
+            <TextField fx:id="date" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></TextField>
          </children>
       </GridPane>
-      <Button layoutX="252.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#toMenuDisplay" prefHeight="42.0" prefWidth="94.0" text="Save">
+      <Button layoutX="252.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#toMenuDisplay" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #e6692c;" text="Save" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="19.0" />
          </font></Button>
-      <Button layoutX="100.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="42.0" prefWidth="94.0" text="Cancel">
+      <Button layoutX="100.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #e6692c;" text="Cancel" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="19.0" />
          </font>

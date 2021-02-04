@@ -7,23 +7,23 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.MenuController">
    <children>
-      <AnchorPane prefHeight="351.0" prefWidth="510.0" style="-fx-background-color: #e6692c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="351.0" prefWidth="510.0" style="-fx-background-color: #1061e3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button contentDisplay="CENTER" layoutX="119.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#toMenuAdd" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #1061e3; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Check in guests" textFill="#ffffff">
+            <Button contentDisplay="CENTER" layoutX="119.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#toMenuAdd" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #e6692c; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Check in guests" textFill="#ffffff">
                <font>
                   <Font name="Calibri Bold" size="17.0" />
                </font></Button>
-            <Button contentDisplay="CENTER" layoutX="330.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#toMenuDelete" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #1061e3; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Check out guests" textFill="#ffffff">
+            <Button contentDisplay="CENTER" layoutX="330.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#toMenuDelete" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #e6692c; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Check out guests" textFill="#ffffff">
                <font>
                   <Font name="Calibri" size="17.0" />
                </font>
             </Button>
-            <Button contentDisplay="CENTER" layoutX="119.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#toMenuDisplay" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #1061e3; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Manages info" textFill="#ffffff">
+            <Button contentDisplay="CENTER" layoutX="119.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#toMenuDisplay" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #e6692c; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Manages info" textFill="#ffffff">
                <font>
                   <Font name="Calibri" size="17.0" />
                </font>
             </Button>
-            <Button contentDisplay="CENTER" layoutX="330.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #1061e3; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Quit" textFill="#ffffff">
+            <Button contentDisplay="CENTER" layoutX="330.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="54.0" prefWidth="154.0" style="-fx-background-color: #e6692c; -fx-border-width: 4px; -fx-border-color: #d1d1d1;" text="Quit" textFill="#ffffff">
                <font>
                   <Font name="Calibri" size="17.0" />
                </font>

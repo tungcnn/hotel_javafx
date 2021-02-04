@@ -12,13 +12,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="hotel.controller.MenuDeleteController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1061e3;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controller.MenuDeleteController">
    <children>
       <ButtonBar layoutX="109.0" layoutY="200.0" prefHeight="40.0" prefWidth="200.0" />
-      <Label alignment="CENTER" layoutY="6.0" text="Check out" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Label alignment="CENTER" layoutY="6.0" text="Check out" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
          <font>
-            <Font name="Arial Bold" size="36.0" />
+            <Font name="Agency FB Bold" size="43.0" />
          </font>
       </Label>
       <GridPane layoutX="191.0" layoutY="89.0" prefHeight="316.0" prefWidth="600.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
@@ -37,18 +36,27 @@
                   <Insets left="30.0" />
                </GridPane.margin>
             </ComboBox>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="215.0" text="Room:">
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="215.0" text="Room:" textFill="WHITE">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
             </Label>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="222.0" text="Check out date:" GridPane.rowIndex="1" />
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="222.0" text="Check out date:" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
             <DatePicker fx:id="date" onAction="#showCODate" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="30.0" />
                </GridPane.margin>
             </DatePicker>
-            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="222.0" text="Total Fee:" GridPane.rowIndex="2" />
+            <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="222.0" text="Total Fee:" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
             <Label fx:id="fee" prefHeight="18.0" prefWidth="175.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets left="55.0" />
@@ -65,29 +73,53 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="126.0" text="Check in date: " />
-                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="122.0" text="Check out date: " GridPane.rowIndex="1" />
-                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="120.0" text="Fee: " GridPane.rowIndex="2" />
-                  <Label fx:id="ciDate" prefHeight="18.0" prefWidth="370.0" text="Check in date" GridPane.columnIndex="1">
+                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="126.0" text="Check in date: " textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="122.0" text="Check out date: " textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="120.0" text="Fee: " textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="ciDate" prefHeight="18.0" prefWidth="370.0" text="Check in date" textFill="WHITE" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets left="20.0" />
                      </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
                   </Label>
-                  <Label fx:id="coDate" prefHeight="18.0" prefWidth="418.0" text="Check out date" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Label fx:id="coDate" prefHeight="18.0" prefWidth="418.0" text="Check out date" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets left="20.0" />
                      </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
                   </Label>
-                  <Label fx:id="fee" prefHeight="18.0" prefWidth="366.0" text="0 VND" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <Label fx:id="fee" prefHeight="18.0" prefWidth="366.0" text="0 VND" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets left="20.0" />
                      </GridPane.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
                   </Label>
                </children>
             </GridPane>
          </children>
       </GridPane>
-      <Button layoutX="64.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#backMenu" prefHeight="50.0" prefWidth="90.0" text="Back" />
-      <Button layoutX="255.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#calculateFee" prefHeight="50.0" prefWidth="90.0" text="Check out" AnchorPane.leftAnchor="255.0" />
+      <Button layoutX="64.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#backMenu" prefHeight="50.0" prefWidth="90.0" style="-fx-background-color: #e6692c;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="247.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#calculateFee" prefHeight="50.0" prefWidth="106.0" style="-fx-background-color: #e6692c;" text="Check out" textFill="WHITE" AnchorPane.leftAnchor="247.0">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
    </children>
 </AnchorPane>
